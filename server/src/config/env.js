@@ -25,7 +25,7 @@ export const env = {
   nodeEnv: process.env.NODE_ENV || 'development',
   isProduction,
   port: Number(process.env.PORT || 3003),
-  databaseUrl: required('DATABASE_URL', 'postgresql://postgres:postgres@localhost:5432/kerama_lms'),
+  databaseUrl: required('DATABASE_URL', 'postgresql://nasty:0000@localhost:5433/kerama_lms'),
   jwtAccessSecret: jwtSecret('JWT_ACCESS_SECRET', 'dev-access-secret-change-me'),
   jwtRefreshSecret: jwtSecret('JWT_REFRESH_SECRET', 'dev-refresh-secret-change-me'),
   jwtAccessTtl: process.env.JWT_ACCESS_TTL || '15m',
