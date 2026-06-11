@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerama Marazzi — Платформа обучения</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo km-logo">
+                <i class="fas fa-industry"></i>
+                <span>Kerama Marazzi</span>
+            </div>
+            <nav class="nav" id="main-nav"></nav>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Обучение сотрудников Kerama Marazzi</h1>
+                    <p>Профессиональные курсы по продукции, технологиям укладки и работе с клиентами. Отслеживайте прогресс и получайте сертификаты.</p>
+                    <div class="hero-buttons">
+                        <a href="login.html" class="btn btn-primary btn-large" id="hero-login-btn">Войти</a>
+                        <a href="courses.html" class="btn btn-primary btn-large btn-hero" id="hero-courses-btn">Смотреть курсы</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <i class="fas fa-graduation-cap" style="font-size: 8rem; opacity: 0.9;"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Возможности платформы</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="km-feature-icon"><i class="fas fa-book-open"></i></div>
+                        <h3>Каталог курсов</h3>
+                        <p>Керамическая плитка, керамогранит, сантехника и технологии монтажа.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="km-feature-icon"><i class="fas fa-tasks"></i></div>
+                        <h3>Назначенные курсы</h3>
+                        <p>Администратор назначает обучение — вы проходите уроки в удобном темпе.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="km-feature-icon"><i class="fas fa-award"></i></div>
+                        <h3>Сертификаты</h3>
+                        <p>PDF-сертификат после успешного завершения назначенного курса.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy;Kerama Marazzi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

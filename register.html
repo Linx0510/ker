@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - Kerama Marazzi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .km-register-info {
+            background-color: #f0f7ff;
+            border-left: 4px solid var(--km-primary);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        
+        .km-register-info p {
+            margin: 0;
+            color: var(--km-dark);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo km-logo">
+                <i class="fas fa-industry"></i>
+                <span>Kerama Marazzi</span>
+            </div>
+            <nav class="nav" id="main-nav"></nav>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h1>Регистрация сотрудника</h1>
+                    <p>Создайте учетную запись для доступа к платформе обучения Kerama Marazzi</p>
+                </div>
+                
+                <div class="km-register-info">
+                    <p><i class="fas fa-info-circle"></i> Регистрация доступна только для сотрудников компании Kerama Marazzi. Все данные будут проверены администратором.</p>
+                </div>
+                
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="reg-name">ФИО *</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="reg-name" placeholder="Введите ваше полное имя" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-email">Рабочий email *</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="reg-email" placeholder="ivanov@kerama-marazzi.ru" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-department">Отдел</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-building"></i>
+                            <select id="reg-department"><option value="">Выберите отдел</option></select>
+                        </div>
+                        <p class="form-hint">Сначала выберите отдел, затем должность</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-position">Должность</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-briefcase"></i>
+                            <select id="reg-position" disabled><option value="">Сначала выберите отдел</option></select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">Пароль *</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="reg-password" placeholder="Введите пароль" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-confirm-password">Подтверждение пароля *</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="reg-confirm-password" placeholder="Подтвердите пароль" required>
+                        </div>
+                    </div>
+                    <div id="register-error" class="error-message" style="display: none;"></div>
+                    <div id="register-success" class="success-message" style="display: none;"></div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Зарегистрироваться</button>
+                    </div>
+                    <div class="auth-links">
+                        <p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+                        <p><a href="index.html">Вернуться на главную</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kerama Marazzi</h3>
+                    <p>Официальная платформа обучения сотрудников компании Kerama Marazzi. Все права защищены.</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Россия, Московская обл.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-envelope"></i> training@kerama-marazzi.ru</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-globe"></i> www.kerama-marazzi.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <a href="index.html">Главная</a>
+                    <a href="courses.html">Курсы обучения</a>
+                    <a href="index.html">Вход в систему</a>
+                    <a href="register.html">Регистрация</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Kerama Marazzi. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
