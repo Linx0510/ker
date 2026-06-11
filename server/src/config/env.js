@@ -33,7 +33,7 @@ export const env = {
   adminEmail: process.env.ADMIN_EMAIL || 'admin@kerama-marazzi.ru',
   adminPassword: process.env.ADMIN_PASSWORD || 'admin123',
   adminName: process.env.ADMIN_NAME || 'Administrator Kerama Marazzi',
-  allowedEmailDomain: process.env.ALLOWED_EMAIL_DOMAIN || 'kerama-marazzi.ru',
+  allowedEmailDomain: process.env.ALLOWED_EMAIL_DOMAIN || '',
   clientOrigins: (process.env.CLIENT_ORIGIN || 'http://localhost:3003,http://89.108.108.88.31:3003')
     .split(',')
     .map((item) => item.trim())
